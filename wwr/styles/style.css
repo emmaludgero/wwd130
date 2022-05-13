@@ -86,7 +86,8 @@ footer a {
 }
 
 footer a:hover {
-    color: #78C5D7;
+    color: #134266;
+    background-color: #78C5D7;
 }
 
 #hero-img {
