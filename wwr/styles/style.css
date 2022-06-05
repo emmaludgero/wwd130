@@ -219,12 +219,12 @@ footer .social img {
 }
 
 #background {
-    grid-column: 1/10;
+    grid-column: 1/11;
     grid-row: 4/9;
     height: 725px;
     background-color: #d9c2a3;
     margin: 200px 0;
-    z-index: 3;
+    width: 100%;
 }
 
 .mountains {
