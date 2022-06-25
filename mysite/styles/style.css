@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #adfff56e;
+}
+
+nav a {
+  text-align: center;
+  color: #348888;
+  text-decoration: none;
+  font-family: 'Fedroka-One', Arial;
+  padding: 35px;
+}
+
+nav a:hover {
+  background-color: #348888;
+  color: whitesmoke;
+}
+
+.button-box {
+  text-align: center;
+}
+
+.learn-more {
+  background-color: #348888;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.home-title {
+  font-family: 'Fedroka-One', Arial;
+  font-size: 2em;
+  margin-top: 10px;
+  color: #348888;
+}
+
+body {
+  background-color: #fcfbfb;
+  font-family: 'Fredoka-One', Helvetica, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.msg p {
+  color: black;
+  font-family: 'Fredoka-One', Helvetica, sans-serif;
+  font-size: .8em;
+  padding-bottom: 15px;
+}
+
+#us-img, #custom-img, #logistic-img, #ship-img {
+  width: 50%;
+}
+
+.society-box p, h2{
+  width: 50%;
+  margin: 10px;
+}
+
+
+footer .social img {
+  padding-top: 15px;
+}
+
+footer {
+  background-color: #adfff56e;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+.logo  {
+  width: 80px;
+}
+
+
+
+
+
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 800px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  form li+li {
+    margin-top: 1em;
+  }
+
+  label {
+    /* Uniform size & alignment */
+    display: block;
+    width: 400px;
+    text-align: left;
+  }
+
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+   By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 800px;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+  }
+
+  .button {
+    /* Align buttons with the text fields */
+    align-content: center;
+    /* same size as the label elements */
+  }
+
+  button {
+    /* This extra margin represent roughly the same space as the space
+   between the labels and their text fields */
+    margin-left: .5em;
+  }
+
+  #feedback {
+    background-color: #FFB46C;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;       
+  }
+
+  .moveDown {
+    margin-top: 3em;
+  }
