@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 #content {
-  max-width: 2000px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: auto;
 }
 
 .home-title {
@@ -22,41 +22,28 @@ h1 {
   margin: 25px;
 }
 
-#us-box {
-  
-  position: relative;
-}
 
-.us-img {
-  
-  position: absolute;
-}
-
-#us-msg {
-  text-align: left;
-  padding-left: 100px;
-  padding-top: 500px;
-  position: absolute;
-}
 
 header {
   display: grid;
-  grid-template-columns: 150px auto;
+  grid-template-columns: 300px repeat(4, 1fr);
   background-color: #adfff56e;
-  font-family: 'Fedroka-One', Arial;
+  place-items: center;
+  justify-content: space-around;
+  font-family: 'Fedroka-One', Arial, sans-serif;
 }
 
-.logo, .logotipo  {
-  width: 100%;
+.logo {
+  max-width: 150px;
   border: #348888 solid 3px;
   border-radius: 100cm;
-  justify-self: center;
-  align-self: center;
   margin: 10px;
-  margin-left: 70px;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 nav { 
+  grid-column: 2/6;
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -64,20 +51,21 @@ nav {
   align-content: center;
   font-size: 1.5em;
   list-style-type: none;
-  
+  font-family: 'Fedroka-One', Arial, sans-serif;
 }
 
 nav a {
-  margin-left: 100px;
-  margin-top: 10px;
-  margin-right: 100px;
-  min-width: 120px;
   text-decoration: none;
-  text-align: center;
   color: #348888;
   text-decoration: solid;
   font-family: 'Fedroka-One', Arial;
-  padding: 35px;
+
+}
+
+.button-box {
+  text-align: center;
+  grid-column: 5/6;
+  grid-row: 1/2;
 }
 
 nav a:hover {
@@ -85,11 +73,36 @@ nav a:hover {
   color: whitesmoke;
 }
 
+#us-box {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  border-bottom: #348888 solid 3px;
+  border-top: #348888 solid 3px;
+}
+
+#us-img {
+  height: 100%;
+  width: 100%;
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+
+#us-msg {
+  text-align: left;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  align-self: left;
+  position: absolute;
+  z-index: 1;
+}
+
 .society-box{
   margin: 100px;
   color: #254646;
   text-align: left;
-
 }
 
 .society-img {
@@ -101,24 +114,18 @@ nav a:hover {
 
 .society-box h2{
   font-size: 4em;
-  padding-left: 500px;
+
 }
 
 .society-box p{
   font-size: 1.5em;
 }
 
-.button-box {
-  text-align: center;
-  align-content: center;
-  align-self: center;
-  margin-top: -20px;
-}
+
 
 #final-msg {
   margin-top: 100px;
   padding: 50px;
-  
   border-top: #348888 solid 3px;
 }
 
@@ -170,16 +177,24 @@ footer {
   background-color: #adfff56e;
   padding: 25px 50px;
   margin-top: 2px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 300px repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  place-items: center;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Fedroka-One', Arial;
+  font-family: 'Fedroka-One', Arial, sans-serif;
   color: #348888;
   text-decoration: none;
 }
 
+footer a{
+  font-family: 'Fedroka-One', Arial, sans-serif;
+  color: #348888;
+}
+
 .logo2  {
-  width: 25%;
+  max-width: 150px;
   border: #348888 solid 3px;
   border-radius: 100cm;
 }
@@ -189,9 +204,7 @@ footer {
   align-self: center;
 }
 
-#logotipo2 {
-  display: flex;
-}
+
 
 p {
   font-family: Helvetica, Arial
@@ -282,3 +295,11 @@ form {
   .moveDown {
     margin-top: 3em;
   }
+
+
+@media screen and (max-width: 900px) {
+  #content {
+    font-size: 25px;
+    
+  }
+}
