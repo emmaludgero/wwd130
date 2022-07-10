@@ -255,6 +255,7 @@ p {
 #second-step {
   display: inline-flex;
   place-items: center;
+  width: 100%;
 }
 
 #third-step {
